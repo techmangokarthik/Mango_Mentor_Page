@@ -1,4 +1,4 @@
-/* Body Content */
+/* Navigation Bar Styling */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
@@ -11,16 +11,23 @@
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     color: #1E6BF1;
     text-decoration: none;
 }
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
+}
+
+.logo{
+    color: #1E6BF1;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: auto;
 }
 
 .nav_link{
@@ -42,8 +49,10 @@ header{
 }
 
 button{
+    margin-left:20px;
     padding: 9px 25px;
-    background-color: rgpba(0,136,169,1);
+    color: white;
+    background-color: rgba(0,136,169,1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -52,4 +61,38 @@ button{
 
 button:hover{
     background-color: rgba(0,136,169,0.8);
+}
+/* Navigation Bar Styling */
+
+/*Body Title Styling*/
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #1E6BF1;
+    text-decoration: none;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #1E6BF1;
+    text-decoration: none;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 10%;
 }
