@@ -1,4 +1,4 @@
-# Mango_Mentor_Page
+# Mango Mentor Page
 
 The Mango Mentorship Landing Page
 
