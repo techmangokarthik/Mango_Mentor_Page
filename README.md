@@ -1,6 +1,9 @@
 # Mango_Mentor_Page
 
-The Mango Mentorship Web Page:
+The Mango Mentorship Web Page
 
-A mentorship for rising seniors and recent alumni who are navigating their way through the
+About:
+
+A mentorship landing page for Computer Science juniors, rising seniors and recent alumni who are navigating their way through the 
 industry.
+
