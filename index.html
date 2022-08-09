@@ -2,13 +2,12 @@
 <html lang="en-us">
 
 <head>
-
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles.css">
 	<title>Mango Mentors</title>
-
+	<!--Mental Note: Make sure this is cross browser AND mobile friendly!!-->
 	<!--Additional elements for browsers and robots go here goes here-->
 </head>
 
@@ -18,22 +17,47 @@
 		<a class="logo" alt="logo">Mango Mentors</a>
 		<nav>
 			<ul class="nav_link">
-				<li><a href="#">Mentee Candidates</a></li>
-				<li><a href="#">Meet Our Mentors!</a></li>
+				<li><a href="#">Mentee Content</a></li>
+				<li><a href="#">Mentor Content</a></li>
 			</ul>
 		</nav>
 		<a class="cta" href="#"><button>Contact Us</button></a>
 	</header>
 	<main>
+
 		<div id="Introduction">
 		<h3>The Mango Mentors</h3>
 			<aside>Put Image Here</aside>
+			<p>Put apply button here and downloadable form here</p>
 			<p>Add text for the Mango Mentor introduction.</p>
 			<p>Add carousel here of companies our mentors are from.</p>
 		</div>
+<!---------------------------------------------------------Carousel Slider-------------------------------------------------------------->
+		<div class = "slider_area">
+			<h3>Companies our mentors work for</h2>
+			<div class = "wrapper">
+				<div class = "item">
+					<img src ="equitable.png" alt="">
+				</div>
+				<div class = "item">
+					<img src ="hsb.png" alt="">
+				</div>
+				<div class = "item">
+					<img src ="huber.png" alt="">
+				</div>
+				<div class = "item">
+					<img src ="Livingston.png" alt="">
+				</div>
+				<div class = "item">
+					<img src ="plex.png" alt="">
+				</div>
+				<div class = "item">
+					<img src="techmango.png">
+				</div>
+			</div>
+		</div>
+<!--------------------------------------------------------------Carousel Slider---------------------------------------------------->
 
-		<aside>Put Carousel of Companies Here</aside>
-		
 		<div id="Mentor_Benefits">
 		<h3>Benefits for the Mentors</h3>
 			<aside>Put Image Here</aside>
@@ -47,24 +71,24 @@
 			<p>Add short list for them (3 bullet points)</p>
 		</div>
 
-		<div id="Core_Mentors">
-		<h3>Meet our Core Mentors!</h3>
-		</div>
-
-		<aside>Put Carousel of Mentors (With Image,Name, and Title) Here</aside>
-
 		<div id="Interest_Form">
-		<h3>Interested?</h3>
-			<p>Add the interactive fillable form here</p>
+		<h3 position="center">Interested? Apply to become a mentee today!</h3>
 			<form>
-				<label for="fname">First name:</label><br>
-				<input type="text", id="fname", name="fname"><br>
-				<label for="lname">Last name: </label><br>
-				<input type="text",id="lname", name="lname"><br>
-				<label for="email">Email: </label><br>
-				<input type="text", id="email",name="email"><br>
-				<label for="fname">Comments: </label><br>
-				<input type="text",id="comments", name="comments"><br>
+				<label for="fname">First name: </label>
+				&emsp; 
+				<input type="text", id="fname", name="fname">
+				&emsp; 
+				<label for="lname">Last name: </label>
+				&emsp; 
+				<input type="text",id="lname", name="lname">
+				&emsp; 
+				<label for="email">Email:  </label>
+				&emsp; 
+				<input type="text", id="email",name="email">
+				&emsp; 
+				<label for="fname">Comments: </label>
+				&emsp; 
+				<input type="text",id="comments", name="comments"
 			</form>
 		</div>
 		
