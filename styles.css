@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-*{
+/*Navigation Styling */
+header{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -12,7 +13,7 @@ nav{
   align-items: center;
   min-height: 8vh;
   font-family: "Montserrat", sans-serif;
-  background-color: white;
+  background-color: none;
 }
 
 .logo{
@@ -111,3 +112,36 @@ nav{
 .toggle .line3{
   transform:rotate(45deg) translate(-5px,-6px);
 }
+/*Navigation Styling*/
+
+/*Main Content*/
+body *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.presentation{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.cover img{
+  height: 60vh;
+}
+
+.introduction{
+  flex: 1;
+}
+
+.intro-text h1{
+  font-size: 44px;
+  font-weight: 500;
+  color: #1E6BF1;
+
+}
+/*Main Content*/
