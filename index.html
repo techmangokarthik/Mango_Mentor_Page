@@ -5,7 +5,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
 	<title>Mango Mentors</title>
 	<!--Mental Note: Make sure this is cross browser AND mobile friendly!!-->
 	<!--Additional elements for browsers and robots go here goes here-->
@@ -43,7 +45,7 @@
 						</p>
 					</div>
 					<div class ="cta">
-						<button class ="cta-select">Apply Today</button>
+						<button class ="cta-select">Apply Today!</button>
 						<button class ="cta-more-info">More Info</button>
 					</div>
 				</div>
@@ -53,5 +55,42 @@
 				</div>
 			</section>
 		</main>
+		<section class="carousel">
+			<h1>Companies that value paying it forward</h1>
+			<div class = "logo-slider">
+				<div class ="single-logo">
+				  <img src="./images/equitable.png" alt="">
+				</div>
+			  <div class="single-logo">
+				  <img src="./images/hsb.png" alt="">
+				</div>
+			  <div class="single-logo">
+				  <img src="./images/huber.png" alt="">
+				</div>
+			  <div class="single-logo">
+				  <img src="./images/Livingston.png" alt="">
+				</div>
+			  <div class="single-logo">
+				  <img src="./images/plex.png" alt="">
+				</div>
+			  <div class="single-logo">
+				  <img src="./images/techmango.png" alt="">
+				</div>
+			  </div>
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<script>
+			$('.logo-slider').slick({
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 3
+				});
+		</script>
+		</section>
+
+
+		<section>
+			
+		</section>
 	  </body>
 </html>

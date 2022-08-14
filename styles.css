@@ -143,7 +143,7 @@ body {
 
 .introduction{
   flex: 1;
-  padding-left: 5.8%;
+  padding-left: 5.4%;
 }
 
 .intro-text h1{
@@ -158,6 +158,7 @@ body {
 
 .cta-select{
   border: none;
+  font-weight: bold;
   border-radius: 25px;
   background: #1E6BF1;
   color: white;
@@ -212,6 +213,50 @@ body {
 		height: 80%;
     position: center;
 	}
-
 }
 /*Main Content*/
+
+/*Carousel Content*/
+.carousel{
+  margin:0 auto;
+  max-width: 1040px;
+}
+
+.logo-slider{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 40vh;
+  align-items: center;
+}
+
+.carousel h1{
+  font-size: 22px;
+  font-weight: bold;
+  color: #1E6BF1;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.carousel h1:after{
+  content: '';
+  position: absolute;
+  width:100px;
+  height: 2px;
+  background-color:none;
+  bottom:-20px;
+  left:0;
+  right:0;
+  margin:0 auto;
+}
+
+.logo-slider .single-logo{
+  background-color: none;
+  padding:15px;
+}
+
+.single-logo img{
+  width: 60%;
+}
+/*Carousel Content*/
