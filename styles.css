@@ -126,7 +126,7 @@ body {
   display: flex;
   width: 90%;
   margin: auto;
-  min-height: 80vh;
+  min-height: 75vh;
   align-items: center;
 }
 
@@ -218,13 +218,13 @@ body {
 
 /*Carousel Content*/
 .carousel{
-  margin:0 auto;
+  margin: 0 auto;
   max-width: 1040px;
 }
 
 .logo-slider{
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: auto;
   min-height: 40vh;
   align-items: center;
@@ -253,10 +253,24 @@ body {
 
 .logo-slider .single-logo{
   background-color: none;
-  padding:15px;
+  padding: 15px;
 }
 
 .single-logo img{
   width: 60%;
 }
 /*Carousel Content*/
+
+
+/*Mentee Community*/
+.mentee-community{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/*Mentee Community*/
+
+
