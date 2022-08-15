@@ -299,30 +299,34 @@ body {
   color: #1E6BF1;
 }
 
-.mentee-checklist{
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.mentee-checklist ul{
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.mentee-checklist li{
-  display:flex;
-}
-
 .mentee-img img{
   display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 55%;
 }
+
+
+.column h2{
+  color: #1E6BF1;
+  font-weight: bold;
+  font:inherit;
+}
+.column {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+
+.row:after {
+  box-sizing: border-box;
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 @media screen and (max-width: 1024px) {
 	.mentee-section {
@@ -335,14 +339,21 @@ body {
 	.mentees-text h1 {
 		font-size: 30px;
 	}
-	.mentees-text p {
+	.mentees-text p,ul,li {
 		font-size: 18px;
 	}
 	.mentee-img img {
     width:100%;
     position: center;
 	}
+  .column {
+    width: 100%;
+  }
 }
 /*Mentee Community*/
 
 
+/*Footer*/
+
+
+/*Footer*/
