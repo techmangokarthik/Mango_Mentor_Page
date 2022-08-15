@@ -196,7 +196,7 @@ body {
 	}
 	.introduction {
 		margin-top: 5vh;
-		text-align: center;
+		text-align: left;
 	}
 	.intro-text h1 {
 		font-size: 30px;
@@ -212,6 +212,7 @@ body {
 		height: 80%;
     width: 100%;
     position: center;
+    margin-bottom: 40px;
 	}
 }
 /*Main Content*/
@@ -228,6 +229,7 @@ body {
   margin: auto;
   min-height: 40vh;
   align-items: center;
+  margin-bottom: 10%;
 }
 
 .carousel h1{
@@ -286,6 +288,7 @@ body {
   margin: auto;
   height: 80vh;
   align-items: center;
+  margin-bottom: 32%;
 }
 
 .mentees{
@@ -301,6 +304,7 @@ body {
 
 .mentee-img img{
   display: flex;
+  margin-top:90px;
   margin-left: auto;
   margin-right: auto;
   width: 55%;
@@ -334,7 +338,7 @@ body {
 	}
 	.mentees {
 		margin-top: 5vh;
-		text-align: center;
+		text-align: left;
 	}
 	.mentees-text h1 {
 		font-size: 30px;
@@ -342,6 +346,7 @@ body {
 	.mentees-text p ul li {
 		font-size: 18px;
 	}
+
 	.mentee-img img {
     width:100%;
     position: center;
@@ -361,6 +366,15 @@ body {
   margin: auto;
   height: 80vh;
   align-items: center;
+  margin-bottom: 20%;
+}
+
+.mentee-benefit-img img{
+  display: flex;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
 }
 
 .mentee-benefits-section{
@@ -372,6 +386,26 @@ body {
   font-size: 44px;
   font-weight: 500;
   color: #1E6BF1;
+}
+
+.mentee-benefit-column h2{
+  color: #1E6BF1;
+  font-weight: bold;
+  font:inherit;
+}
+.mentee-benefit-column {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+
+.mentee-benefit-row:after {
+  box-sizing: border-box;
+  content: "";
+  display: table;
+  clear: both;
 }
 /*Mentor Benefits*/
 
@@ -386,6 +420,13 @@ body {
   align-items: center;
 }
 
+.mentor-benefit-img img{
+  display: flex;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
 .mentor-benefits-section{
   flex: 1;
 }
