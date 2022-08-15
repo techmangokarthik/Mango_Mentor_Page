@@ -61,7 +61,7 @@ nav{
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
   body{
     overflow-x: hidden;
   }
@@ -400,14 +400,15 @@ body {
   padding: 10px;
 }
 
-
 .mentee-benefit-row:after {
   box-sizing: border-box;
   content: "";
   display: table;
   clear: both;
 }
-/*Mentor Benefits*/
+
+
+/*Mentee Benefits*/
 
 
 /*Mentor Benefits*/
