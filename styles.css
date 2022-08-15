@@ -140,7 +140,6 @@ body {
   /*filter: drop-shadow(0px 5px 3px #1E6BF1)*/
 }
 
-
 .introduction{
   flex: 1;
   padding-left: 5.4%;
@@ -211,6 +210,7 @@ body {
 	
 	.cover img {
 		height: 80%;
+    width: 100%;
     position: center;
 	}
 }
@@ -231,20 +231,20 @@ body {
 }
 
 .carousel h1{
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
-  font-weight: bold;
   color: #1E6BF1;
   text-align: center;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .carousel h1:after{
   content: '';
   position: absolute;
-  width:100px;
+  width: 100px;
   height: 2px;
-  background-color:none;
+  background-color:orange;
   bottom:-20px;
   left:0;
   right:0;
@@ -259,18 +259,90 @@ body {
 .single-logo img{
   width: 60%;
 }
+
+@media screen and (max-width: 1024px) {
+	.carousel {
+		flex-direction: column;
+    margin-top: 5vh;
+	}
+  .carousel h1{
+    font-size: 22px;
+  }
+
+	.logo-slider {
+    padding-top: 5%;
+    width:100%;
+    position: center;
+	}
+}
 /*Carousel Content*/
 
 
 /*Mentee Community*/
-.mentee-community{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+.mentee-section{
+  display: flex;
+  width: 80%;
+  min-height: 20vh;
+  margin: auto;
+  height: 80vh;
+  align-items: center;
 }
 
+.mentees{
+  flex: 1;
+}
 
+.mentees-text h1{
+  flex:1;
+  font-size: 44px;
+  font-weight: 500;
+  color: #1E6BF1;
+}
+
+.mentee-checklist{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.mentee-checklist ul{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.mentee-checklist li{
+  display:flex;
+}
+
+.mentee-img img{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
+@media screen and (max-width: 1024px) {
+	.mentee-section {
+		flex-direction: column;
+	}
+	.mentees {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.mentees-text h1 {
+		font-size: 30px;
+	}
+	.mentees-text p {
+		font-size: 18px;
+	}
+	.mentee-img img {
+    width:100%;
+    position: center;
+	}
+}
 /*Mentee Community*/
 
 
