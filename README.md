@@ -2,3 +2,5 @@
 
 A mentorship landing page for Computer Science juniors, rising seniors and recent alumni who are navigating their way through the 
 industry.
+
+Link to landing page: https://argunawan.github.io/Mango_Mentor_Page/
