@@ -214,6 +214,94 @@ body {
     position: center;
     margin-bottom: 40px;
 	}
+  .carousel {
+		flex-direction: column;
+    margin-top: 5vh;
+	}
+  .carousel h1{
+    font-size: 22px;
+  }
+
+	.logo-slider {
+    padding-top: 5%;
+    width:100%;
+    position: center;
+	}
+  .mentee-section {
+		flex-direction: column;
+	}
+	.mentees {
+		margin-top: 5vh;
+		text-align: left;
+	}
+	.mentees-text h1 {
+		font-size: 30px;
+	}
+	.mentees-text p ul li {
+		font-size: 18px;
+	}
+
+	.mentee-img img {
+    width:100%;
+    position: center;
+	}
+  .column {
+    width: 100%;
+  }
+
+  .mentee-benefits {
+		flex-direction: column;
+	}
+	.mentee-benefits-section {
+		margin-top: 5vh;
+		text-align: left;
+	}
+	.mentees-benefits-text h1 {
+		font-size: 30px;
+	}
+	.mentees-benefits-text p ul li {
+		font-size: 18px;
+	}
+
+	.mentee-benefit-img img {
+    width:100%;
+    position: center;
+	}
+  .mentee-benefit-column {
+    width: 100%;
+  }
+  .mentor-benefits {
+		flex-direction: column;
+	}
+	.mentor-benefits-section {
+		margin-top: 5vh;
+		text-align: left;
+	}
+	.mentor-benefits-text h1 {
+		font-size: 30px;
+	}
+	.mentor-benefits-text p ul li {
+		font-size: 18px;
+	}
+
+	.mentor-benefit-img img {
+    width:100%;
+    position: center;
+	}
+  .mentor-benefit-column {
+    width: 100%;
+  }
+
+  .interested {
+		flex-direction: column;
+	}
+	.interested-section {
+		margin-top: 5vh;
+		text-align: left;
+	}
+	.interested-text h1 {
+		font-size: 30px;
+	}
 }
 /*Main Content*/
 
@@ -260,22 +348,6 @@ body {
 
 .single-logo img{
   width: 60%;
-}
-
-@media screen and (max-width: 1024px) {
-	.carousel {
-		flex-direction: column;
-    margin-top: 5vh;
-	}
-  .carousel h1{
-    font-size: 22px;
-  }
-
-	.logo-slider {
-    padding-top: 5%;
-    width:100%;
-    position: center;
-	}
 }
 /*Carousel Content*/
 
@@ -330,31 +402,6 @@ body {
   display: table;
   clear: both;
 }
-
-
-@media screen and (max-width: 1024px) {
-	.mentee-section {
-		flex-direction: column;
-	}
-	.mentees {
-		margin-top: 5vh;
-		text-align: left;
-	}
-	.mentees-text h1 {
-		font-size: 30px;
-	}
-	.mentees-text p ul li {
-		font-size: 18px;
-	}
-
-	.mentee-img img {
-    width:100%;
-    position: center;
-	}
-  .column {
-    width: 100%;
-  }
-}
 /*Mentee Section*/
 
 
@@ -407,7 +454,6 @@ body {
   clear: both;
 }
 
-
 /*Mentee Benefits*/
 
 
@@ -438,6 +484,26 @@ body {
   font-weight: 500;
   color: #1E6BF1;
 }
+
+.mentor-benefit-column h2{
+  color: #1E6BF1;
+  font-weight: bold;
+  font:inherit;
+}
+.mentor-benefit-column {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.mentor-benefit-row:after {
+  box-sizing: border-box;
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*Mentor Benefits*/
 
 
