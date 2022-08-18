@@ -134,12 +134,19 @@ body {
   flex:1;
 }
 
-.cover img{
-  height: 60vh;
+.intro-img img {
+  height: 60%;
   display:flex;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
+}
+.cover img{
+  height: 60%;
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
   /*filter: drop-shadow(0px 5px 3px #1E6BF1)*/
 }
 
@@ -211,6 +218,16 @@ body {
 		padding: 10px 0px 0px 0px;
 	}
 
+  .presentation-img{
+    height: 80%;
+    width: 100%;
+    position: center;
+    margin-bottom: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 	.cover img {
 		height: 80%;
     width: 100%;
@@ -258,7 +275,6 @@ body {
   margin: auto;
   min-height: 40vh;
   align-items: center;
-  margin-bottom: 10%;
 }
 
 .carousel h1{
