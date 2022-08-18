@@ -137,6 +137,9 @@ body {
 .cover img{
   height: 60vh;
   display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   /*filter: drop-shadow(0px 5px 3px #1E6BF1)*/
 }
 
@@ -207,12 +210,15 @@ body {
 	.cta {
 		padding: 10px 0px 0px 0px;
 	}
-	
+
 	.cover img {
 		height: 80%;
     width: 100%;
     position: center;
     margin-bottom: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 	}
   .interested {
 		flex-direction: column;
@@ -286,43 +292,6 @@ body {
 }
 /*Carousel Content*/
 
-
-/*Mentee Section*/
-.mentee-section{
-  display: flex;
-  width: 80%;
-  min-height: 20vh;
-  margin: auto;
-  height: 80vh;
-  align-items: center;
-  margin-bottom: 32%;
-}
-
-.mentees{
-  flex: 1;
-}
-
-.mentees-text h1{
-  flex:1;
-  font-size: 44px;
-  font-weight: 500;
-  color: #1E6BF1;
-}
-
-.mentee-img img{
-  display: flex;
-  margin-top:90px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 55%;
-}
-
-
-.column h2{
-  color: #1E6BF1;
-  font-weight: bold;
-  font:inherit;
-}
 .column {
   box-sizing: border-box;
   float: left;
@@ -330,118 +299,18 @@ body {
   padding: 10px;
 }
 
-
 .row:after {
-  box-sizing: border-box;
   content: "";
-  display: table;
-  clear: both;
-}
-/*Mentee Section*/
-
-
-/*Mentor Benefits*/
-.mentee-benefits{
-  display: flex;
-  width: 80%;
-  min-height: 20vh;
-  margin: auto;
-  height: 80vh;
-  align-items: center;
-  margin-bottom: 25%;
-}
-
-.mentee-benefit-img img{
-  display: flex;
-  padding-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 55%;
-}
-
-.mentee-benefits-section{
-  flex: 1;
-}
-
-.mentee-benefits-text h1{
-  flex:1;
-  font-size: 44px;
-  font-weight: 500;
-  color: #1E6BF1;
-}
-
-.mentee-benefit-column h2{
-  color: #1E6BF1;
-  font-weight: bold;
-  font:inherit;
-}
-.mentee-benefit-column {
   box-sizing: border-box;
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-}
-
-.mentee-benefit-row:after {
-  box-sizing: border-box;
-  content: "";
   display: table;
   clear: both;
 }
 
-/*Mentee Benefits*/
-
-
-/*Mentor Benefits*/
-.mentor-benefits{
-  display: flex;
-  width: 80%;
-  min-height: 20vh;
-  margin: auto;
-  height: 80vh;
-  align-items: center;
-  margin-bottom: 10%;
+@media screen and (max-width: 1024px) {
+  .column {
+    width: 100%;
+  }
 }
-
-.mentor-benefit-img img{
-  display: flex;
-  padding-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 55%;
-}
-.mentor-benefits-section{
-  flex: 1;
-}
-
-.mentor-benefits-text h1{
-  flex:1;
-  font-size: 44px;
-  font-weight: 500;
-  color: #1E6BF1;
-}
-
-.mentor-benefit-column h2{
-  color: #1E6BF1;
-  font-weight: bold;
-  font:inherit;
-}
-.mentor-benefit-column {
-  box-sizing: border-box;
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-}
-
-.mentor-benefit-row:after {
-  box-sizing: border-box;
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/*Mentor Benefits*/
-
 
 /*Interested Section*/
 .interested{
