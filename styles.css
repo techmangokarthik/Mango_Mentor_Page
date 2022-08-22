@@ -296,6 +296,62 @@ body {
 }
 /*Main Content*/
 
+
+/*Blockquote Content*/
+blockquote{
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: center;
+  padding: 25px;
+  background: #f8fffe;
+  border: 1px solid #b0d2cb;
+  color: #1E6BF1;
+  box-sizing: border-box;
+}
+
+.blockquote_text{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.blockquote_text:not(:last-child){
+  margin-bottom: 1em;
+}
+
+.blockquote_bordered{
+  border-left-width: 10px;
+}
+
+.blockquote_text_credit{
+  font-weight: bold;
+  font-style: normal;
+  text-align: right;
+}
+
+.blockquote_text_credit::before{
+  content: "\2014\0020";
+}
+
+.blockquote_quoted::before {
+  content: "\201c";
+  font-size: 100px;
+  color: orange;
+  display: block;
+  margin-bottom: -40px;
+  margin-top: -20px;
+}
+
+/*Blockquote Content*/
+
+
+
+
+
 /*Carousel Content*/
 .carousel{
   margin: 0 auto;
