@@ -355,7 +355,8 @@ blockquote{
 /*Carousel Content*/
 .carousel{
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: 100%;
+  /* max-width: 1040px; */
 }
 
 .logo-slider{
@@ -390,6 +391,7 @@ blockquote{
 }
 
 .logo-slider .single-logo{
+  margin-top: 5%;
   background-color: none;
   padding: 10px;
 }
