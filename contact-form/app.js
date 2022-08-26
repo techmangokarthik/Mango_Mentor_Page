@@ -1,5 +1,4 @@
 // Your web app's Firebase configuration
-
 const firebaseConfig = {
     apiKey: "AIzaSyAAyPWWYi6JmZPJ4Ojhzn82na0xdaPEm0g",
     authDomain: "mango-mentors-landing-page.firebaseapp.com",
@@ -15,7 +14,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 //Reference Contact Information collections
-const contactInfo = firebase.database().ref("infos");
+const contactInfo = firebase.database("https://mango-mentors-landing-page-default-rtdb.firebaseio.com/").ref("infos");
 
 //Listens for a submission
 document.querySelector(".contact-form").addEventListener("submit",submitForm);
