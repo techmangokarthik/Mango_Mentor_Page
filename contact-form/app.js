@@ -1,13 +1,14 @@
 // Your web app's Firebase configuration
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBbJtd7kpde7-EjbNvcGq3LTLrYBj8rC_c",
-    authDomain: "contact-form-dcc97.firebaseapp.com",
-    projectId: "contact-form-dcc97",
-    databaseURL: "https://contact-form-dcc97-default-rtdb.firebaseio.com/",
-    storageBucket: "contact-form-dcc97.appspot.com",
-    messagingSenderId: "807290986274",
-    appId: "1:807290986274:web:3b2710df27579759500f7b"
+    apiKey: "AIzaSyAAyPWWYi6JmZPJ4Ojhzn82na0xdaPEm0g",
+    authDomain: "mango-mentors-landing-page.firebaseapp.com",
+    projectId: "mango-mentors-landing-page",
+    storageBucket: "mango-mentors-landing-page.appspot.com",
+    databaseURL: "https://mango-mentors-landing-page-default-rtdb.firebaseio.com/",
+    messagingSenderId: "886916120017",
+    appId: "1:886916120017:web:6594b1d44789926ef874f0",
+    measurementId: "G-SZ37JR338Y"
   };
 
 // Initialize Firebase
