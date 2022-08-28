@@ -12,26 +12,38 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const database = firebase.firestore();
 
 //Reference Contact Information collections
-const contactInfo = firebase.database("https://mango-mentors-landing-page-default-rtdb.firebaseio.com/").ref("infos");
+const contactInfo = firebase.database().ref('contact-info');
 
 //Listens for a submission
 document.querySelector(".contact-form").addEventListener("submit",submitForm);
+
+// let name = document.querySelector(".name").value;
+// let email = document.querySelector(".email").value;
+// let phone = document.querySelector(".phone").value;
+// let message = document.querySelector(".message").value;
 
 function submitForm(e){
     e.preventDefault();
     
     //Get form values here
-    let name = document.querySelector(".name").value;
-    let email = document.querySelector(".email").value;
-    let phone = document.querySelector(".phone").value;
-    let message = document.querySelector(".message").value;
+    const name = document.querySelector(".name").value;
+    const email = document.querySelector(".email").value;
+    const phone = document.querySelector(".phone").value;
+    const message = document.querySelector(".message").value;
     console.log(name,email,phone,message);
-
     saveContactInfo(name, email, phone, message);
 
-    document.querySelector(".contact-form").reset();
+    database.collection('contact-form').doc().set({
+      name: name.value,
+      email: email.value,
+      phone: phone.value,
+      message: message.value,
+    }).then(() => {
+      document.querySelector(".contact-form").reset();
+    })
 }
 
 function saveContactInfo(name, email, phone, message) {
