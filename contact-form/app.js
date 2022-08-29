@@ -59,8 +59,8 @@ function saveContactInfo(name, email, phone, message) {
   
 
 
-
-  document.getElementById('cta-select').addEventListener('click', function(){
+// For Contacting us
+  document.getElementById('apply-select').addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display = 'flex';
   });
 
@@ -73,6 +73,17 @@ function saveContactInfo(name, email, phone, message) {
     document.querySelector('.bg-modal').style.display = "none";
   });
 
+  document.querySelector('.submit').addEventListener("click", function() {
+    document.querySelector('.bg-modal').style.display = "none";
+  });
+// For applying as a mentor or mentee
+
+
+//For more information
+document.getElementById('apply-more-info').addEventListener('click', function(){
+  document.querySelector('.apply-modal').style.display = 'flex';
+});
+
   document.querySelector('.close').addEventListener("click", function() {
     document.querySelector('.apply-modal').style.display = "none";
   });
@@ -80,8 +91,21 @@ function saveContactInfo(name, email, phone, message) {
   document.querySelector('.submit').addEventListener("click", function() {
     document.querySelector('.apply-modal').style.display = "none";
   });
+//For more information
 
 
+// //Applying as a mentor or mentee
+// document.getElementById('apply-more-info').addEventListener('click', function(){
+//   document.querySelector('.apply-modal').style.display = 'flex';
+// });
+
+//   document.querySelector('.close').addEventListener("click", function() {
+//     document.querySelector('.apply-modal').style.display = "none";
+//   });
+
+//   document.querySelector('.submit').addEventListener("click", function() {
+//     document.querySelector('.apply-modal').style.display = "none";
+//   });
 
 
  
