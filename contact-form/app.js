@@ -57,3 +57,31 @@ function saveContactInfo(name, email, phone, message) {
     });
   }
   
+
+
+
+  document.getElementById('cta-select').addEventListener('click', function(){
+    document.querySelector('.bg-modal').style.display = 'flex';
+  });
+
+  document.getElementById('button').addEventListener('click', function(){
+    document.querySelector('.bg-modal').style.display = 'flex';
+  });
+  
+  
+ document.querySelector('.close').addEventListener("click", function() {
+    document.querySelector('.bg-modal').style.display = "none";
+  });
+
+  document.querySelector('.close').addEventListener("click", function() {
+    document.querySelector('.apply-modal').style.display = "none";
+  });
+
+  document.querySelector('.submit').addEventListener("click", function() {
+    document.querySelector('.apply-modal').style.display = "none";
+  });
+
+
+
+
+ 
