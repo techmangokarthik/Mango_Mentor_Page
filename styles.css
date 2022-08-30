@@ -58,6 +58,7 @@ nav{
 @media screen and (max-width: 1024px){
   .nav-links{
     width: 60%;
+    overflow-x: hidden;
   }
 }
 
@@ -77,9 +78,11 @@ nav{
     width: 50%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    overflow-x: hidden;
   }
   .nav-links li{
     color: #1E6BF1;
+    overflow-x:hidden;
   }
   .burger{
     display: block;
@@ -183,23 +186,6 @@ body {
 
 .info-section{
   padding: 50px 0px 0px 0px
-}
-
-.apply-select{
-  border: none;
-  font-weight: bold;
-  border-radius: 25px;
-  background: #1E6BF1;
-  color: white;
-  width: 150px;
-  height: 50px;
-  cursor: pointer;
-  font-family: "Montserrat", sans-serif;
-}
-
-.apply-select:hover{
-  color: gray;
-  border: 2px solid;
 }
 
 .apply-more-info{
@@ -601,6 +587,7 @@ blockquote{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: center;
   display: none;
 }
 
@@ -623,13 +610,130 @@ blockquote{
 }
 
 .contact-button{
-  position: absolute;
-  display: flex;
-  cursor:pointer;
-  align-items: center;
-  justify-content: center;
+  color: #1E6BF1;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
 }
-  .contact-button:hover {
+ 
+ .application-form h3 { 
+  color: orange;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.application-form{
+  background: lightblue;
+  display:flex;
+  flex-direction: column;
+  position: center;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.application-form  label {
+  font-family: inherit;
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+.application-form  input:focus {
+  border-bottom: 2px solid orange;
+}
+
+.application-form  input, textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: white;
+  font-size:16px;
+}
+
+.application-form textarea:focus {
+  border-bottom: 2px solid orange;
+}
+
+.application-form button {
+  padding: 15px;
+  font-size: 18px;
+  background: orange;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border:0;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius:30px;
+  transition: 0.2s ease-in-out;
+}
+
+.application-form button:hover {
+  background-color: orange;
+  border-bottom: 3px solid lightblue;
+}
+
+@media all and (min-width: 1000px) {
+  .application-form{
+    width: 40%;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .application-form{
+    width: 30%;
+  }
+}
+
+ .apply-modal{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.apply-modal-content{
+  width: 80%;
+  height: 100%;
+  background-color: lightblue;
+  border-radius: 6px;
+}
+
+.apply-close{
+  color: orange;
+  position: absolute;
+  top:0;
+  margin-top: 10px;
+  padding-left: 495px;
+  font-family: inherit;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.apply-button{
+  border: none;
+  font-weight: bold;
+  border-radius: 25px;
+  background: #1E6BF1;
+  color: white;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+  .apply-button:hover {
   background-color: white;
+  color: blue;
+  border: 2px solid blue;
  }
 /*Form*/

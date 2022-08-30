@@ -51,7 +51,7 @@
 						</p>
 					</div>
 					<div class ="info-section">
-						<button id="apply-select" class ="apply-select">Apply Today!</button>
+						<button id="apply-button" class ="apply-button">Apply Today!</button>
 						<a href="./documents/Mentorship_Guidelines.pdf" download>
 						<button id = "apply-more-info" class ="apply-more-info">More Info</button>
 						</a>
@@ -81,7 +81,24 @@
 				</form>
 			</div>
 
-			
+
+		<div class ="application-form apply-modal">
+			<form class = "application-form apply-modal-content">
+				<div class = "apply-close">X</div>
+					<h3>Apply</h3>
+						<input type="hidden" name="subject" value="New email!">
+						<label>Name</label>
+						<input type="text" class ="app_name" name="app_name" placeholder = "Write your name here">
+						<label>Email</label>
+						<input type="email" class ="app_email" name="app_email" placeholder= Email address">
+						<input type="hidden" name="next" value="https://argunawan.github.io/Mango_Mentor_Page/pages/thankyou.html">
+						<label>Phone</label>
+						<input type="text"class ="app_phone" name="app_phone" placeholder =" Phone number">
+						<label>Message</label>
+						<textarea id="app_message" class ="app_message" name ="app_message" rows="4" placeholder= "How can we help you?"></textarea>
+						<button class = "apply-submit" type= "apply-submit">Submit</button>
+				</form>
+		</div>
 		
 			<section class ="presentation">
 				<div class = "introduction">
