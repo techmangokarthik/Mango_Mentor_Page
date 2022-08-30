@@ -519,7 +519,13 @@ blockquote{
   justify-content: center;
 }
 
-form{
+.contact-form h3 { 
+  color: orange;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.contact-form {
   background: lightblue;
   display:flex;
   flex-direction: column;
@@ -529,23 +535,33 @@ form{
   border-radius: 10px;
 }
 
-form h3{
-  color: orange;
-  font-weight: 800;
-  margin-bottom: 20px;
+.contact-form label {
+  font-family: inherit;
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
-form input, form textarea{
+
+.contact-form input:focus {
+  border-bottom: 2px solid orange;
+}
+
+.contact-form input, textarea {
   border: 0;
   margin: 10px 0;
   padding: 20px;
   outline: none;
   background: white;
-  font-size:16px;
   font-family: inherit;
+  font-size:16px;
 }
 
-form button{
+.contact-form textarea:focus {
+  border-bottom: 2px solid orange;
+}
+
+.contact-form button {
   padding: 15px;
   font-size: 18px;
   background: orange;
@@ -556,30 +572,43 @@ form button{
   width: 150px;
   margin: 20px auto 0;
   border-radius:30px;
+  transition: 0.2s ease-in-out;
 }
 
-.bg-modal, .apply-modal{
-  box-sizing: border-box;
+.contact-form button:hover {
+  background-color: orange;
+  border-bottom: 3px solid lightblue;
+}
+
+@media all and (min-width: 1000px) {
+  .contact-form {
+    width: 40%;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  .contact-form{
+    width: 30%;
+  }
+}
+
+.bg-modal{
   width: 100%;
   height: 100%;
   position: absolute;
+  margin-top: 5%;
   top: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x:hidden;
   display: none;
-  margin-top: 1%;
 }
 
-
 .modal-content{
-  width: 100%;
+  width: 80%;
   height: 100%;
   background-color: lightblue;
   border-radius: 6px;
-  overflow-x:hidden;
 }
 
 .close{
@@ -587,31 +616,20 @@ form button{
   position: absolute;
   top:0;
   margin-top: 10px;
-  padding-left: 43%;
+  padding-left: 600px;
   font-family: inherit;
   font-size: 30px;
   cursor: pointer;
 }
 
-.button {
-  background-color: blue;
-  border: 2px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  padding: 10px 28px;
-  color: white;
-  margin-top: 10px;
+.contact-button{
   position: absolute;
-  width: 10%;
   display: flex;
   cursor:pointer;
   align-items: center;
   justify-content: center;
 }
-  button:hover {
+  .contact-button:hover {
   background-color: white;
-  color: blue;
-  border: 2px solid blue;
  }
-
 /*Form*/

@@ -17,6 +17,7 @@ const database = firebase.firestore();
 //Reference Contact Information collections
 const contactInfo = firebase.database().ref('contact-info');
 
+
 //Listens for a submission
 document.querySelector(".contact-form").addEventListener("submit",submitForm);
 
@@ -46,6 +47,7 @@ function submitForm(e){
     })
 }
 
+
 function saveContactInfo(name, email, phone, message) {
     let newContactInfo = contactInfo.push();
   
@@ -56,56 +58,17 @@ function saveContactInfo(name, email, phone, message) {
       message: message,
     });
   }
+
   
-
-
 // For Contacting us
-  document.getElementById('apply-select').addEventListener('click', function(){
-    document.querySelector('.bg-modal').style.display = 'flex';
-  });
-
-  document.getElementById('button').addEventListener('click', function(){
-    document.querySelector('.bg-modal').style.display = 'flex';
-  });
-  
-  
- document.querySelector('.close').addEventListener("click", function() {
-    document.querySelector('.bg-modal').style.display = "none";
-  });
-
-  document.querySelector('.submit').addEventListener("click", function() {
-    document.querySelector('.bg-modal').style.display = "none";
-  });
-// For applying as a mentor or mentee
-
-
-//For more information
-document.getElementById('apply-more-info').addEventListener('click', function(){
-  document.querySelector('.apply-modal').style.display = 'flex';
+document.getElementById('contact-button').addEventListener('click', function(){
+  document.querySelector('.bg-modal').style.display = 'flex';
 });
 
-  document.querySelector('.close').addEventListener("click", function() {
-    document.querySelector('.apply-modal').style.display = "none";
-  });
+document.querySelector('.close').addEventListener("click", function() {
+  document.querySelector('.bg-modal').style.display = "none";
+});
 
-  document.querySelector('.submit').addEventListener("click", function() {
-    document.querySelector('.apply-modal').style.display = "none";
-  });
-//For more information
-
-
-// //Applying as a mentor or mentee
-// document.getElementById('apply-more-info').addEventListener('click', function(){
-//   document.querySelector('.apply-modal').style.display = 'flex';
-// });
-
-//   document.querySelector('.close').addEventListener("click", function() {
-//     document.querySelector('.apply-modal').style.display = "none";
-//   });
-
-//   document.querySelector('.submit').addEventListener("click", function() {
-//     document.querySelector('.apply-modal').style.display = "none";
-//   });
-
-
- 
+document.querySelector('.submit').addEventListener("click", function() {
+  document.querySelector('.bg-modal').style.display = "none";
+});
