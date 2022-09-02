@@ -16,18 +16,21 @@ nav{
   background-color: none;
 }
 
-.logo{
+.logo a{
   color:#1E6BF1;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
+  text-decoration: none;
 }
+
 
 .nav-links{
   display:flex;
   color: #1E6BF1;
   justify-content: space-around;
   width: 35%;
+  overflow-x: hidden;
 }
 
 .nav-links li{
@@ -40,6 +43,7 @@ nav{
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 14px;
+  overflow-y: hidden;
 }
 
 .burger{
@@ -66,6 +70,15 @@ nav{
   body{
     overflow-x: hidden;
   }
+
+  .logo a{
+    color:#1E6BF1;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
   .nav-links{
     position: absolute;
     right: 0px;
@@ -299,8 +312,8 @@ blockquote{
   margin-right: auto;
   position: center;
   padding: 25px;
-  background: #f8fffe;
-  border: 1px solid #b0d2cb;
+  background: lightblue;
+  border: 1px solid #1E6BF1;
   color: #1E6BF1;
   box-sizing: border-box;
 }
