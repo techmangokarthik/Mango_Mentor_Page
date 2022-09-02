@@ -8,9 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-	<link rel ="shortcut icon" type="image/png" href="./images/favicon.png">
+	<link rel ="shortcut icon" type="image/png" href=" /images/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	 <script type = "module" src="https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js"></script>
+	<script type = "module" src="https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js"></script>
+	<script type = "module" src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js"></script>
+	<!-- <script type = "module" src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js"></script> -->
+	<script  type = "module" src = "app.js"></script>
 	<title>Mango Mentors</title>
 	<!--Mental Note: Make sure this is cross browser AND mobile friendly!!-->
 	<!--Additional elements for browsers and robots go here goes here-->
@@ -25,7 +28,7 @@
 			<ul class = "nav-links">
 				<li><a href= "#mentee-content">Mentee Content</a></li>
 				<li><a href="#mentor-content">Mentor Content</a></li>
-				<li><a>Contact Us</a></li>
+				<li><a class = "contact-button" id = "contact-button">Contact Us</a></li>
 			</ul>
 			<div class =" burger">
 			  <div class ="line1"></div>
@@ -47,10 +50,10 @@
 							online program in preparing for your first role!
 						</p>
 					</div>
-					<div class ="cta">
-						<button class ="cta-select">Apply Today!</button>
+					<div class ="info-section">
+						<button id="apply-button" class ="apply-button">Apply Today!</button>
 						<a href="./documents/Mentorship_Guidelines.pdf" download>
-							<button class ="cta-more-info">More Info</button>
+						<button id = "apply-more-info" class ="apply-more-info">More Info</button>
 						</a>
 					</div>
 				</div>
@@ -60,18 +63,54 @@
 				</div>
 			</section>
 
+			<div class ="bg-modal">
+				<form class = "contact-form modal-content">
+				  <div class = "close">X</div>
+				  <h3>Contact Us</h3>
+				  <input type="hidden" name="subject" value="New email!">
+				  <label>Name</label>
+				  <input type="text" class ="name" name="name" placeholder = "Write your name here">
+				  <label>Email</label>
+				  <input type="email" class ="email" name="email" placeholder= Email address">
+				  <input type="hidden" name="next" value="https://argunawan.github.io/Mango_Mentor_Page/pages/thankyou.html">
+				  <label>Phone</label>
+				  <input type="text"class ="phone" name="phone" placeholder =" Phone number">
+				  <label>Message</label>
+				  <textarea id="message" class ="message" name ="message" rows="4" placeholder = "How can we help you?"></textarea>
+				  <button class = "submit" type= "submit">Submit</button>
+				</form>
+			</div>
+
+
+		<div class ="application-form apply-modal">
+			<form class = "application-form apply-modal-content">
+				<div class = "apply-close">X</div>
+					<h3>Apply</h3>
+						<input type="hidden" name="subject" value="New email!">
+						<label>Name</label>
+						<input type="text" class ="app_name" name="app_name" placeholder = "Write your name here">
+						<label>Email</label>
+						<input type="email" class ="app_email" name="app_email" placeholder= Email address">
+						<input type="hidden" name="next" value="https://argunawan.github.io/Mango_Mentor_Page/pages/thankyou.html">
+						<label>Phone</label>
+						<input type="text"class ="app_phone" name="app_phone" placeholder =" Phone number">
+						<label>Message</label>
+						<textarea id="app_message" class ="app_message" name ="app_message" rows="4" placeholder= "How can we help you?"></textarea>
+						<button class = "apply-submit" type= "apply-submit">Submit</button>
+				</form>
+		</div>
+		
 			<section class ="presentation">
 				<div class = "introduction">
 					<blockquote class = "blockquote blockquote_bordered blockquote_quoted">
 						<p class = "blockquote_text">
-						 Always pass on what you learned.
+						 	Always pass on what you learned.
 						</p>
 						<p class = "blockquote_text   blockquote_text_credit">
-						Master Yoda
+							Master Yoda
 						</p>
 					</blockquote>
 				</div>
-				
 			</section>	
 			
 
@@ -253,26 +292,26 @@
 			<h1>Companies that value paying it forward</h1>
 			<div class = "logo-slider">
 				<div class ="single-logo">
-				  <img src="./images/equitable.png" alt="">
+				  <img src="images/equitable.png" alt="">
 				</div>
 			  <div class="single-logo">
-				  <img src="./images/hsb.png" alt="">
+				  <img src="images/hsb.png" alt="">
 				</div>
 			  <div class="single-logo">
-				  <img src="./images/huber.png" alt="">
+				  <img src="images/huber.png" alt="">
 				</div>
 			  <div class="single-logo">
-				  <img src="./images/Livingston.png" alt="">
+				  <img src="images/Livingston.png" alt="">
 				</div>
 			  <div class="single-logo">
-				  <img src="./images/plex.png" alt="">
+				  <img src="images/plex.png" alt="">
 				</div>
 			  <div class="single-logo">
-				  <img src="./images/techmango.png" alt="">
+				  <img src="images/techmango.png" alt="">
 				</div>
 			  </div>
 			  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 		<script>
 			$('.logo-slider').slick({
 				infinite: true,
@@ -293,30 +332,11 @@
 						</p>
 				</div>
 				<div class ="cta">
-					<button class ="cta-select">Register as a mentee</button>
-					<button class ="cta-more-info">Register as a mentor</button>
+					<button class ="apply-select">Register today!</button>
 				</div>
 			</div>
 		</section>
-		
-		<section class = "presentation">
-			<div class = "container">
-				<form class = "contact-form">
-				  <h3>Contact Us</h3>
-				  <input type="hidden" name="subject" value="New email!">
-				  <label>Name</label>
-				  <input type="text" class ="name" name="name" placeholder = "Write your name here">
-				  <label>Email</label>
-				  <input type="email" class ="email" name="email" placeholder= Email address">
-				  <input type="hidden" name="next" value="https://argunawan.github.io/Mango_Mentor_Page/pages/thankyou.html">
-				  <label>Phone</label>
-				  <input type="text"class ="phone" name="phone" placeholder =" Phone number">
-				  <label>Message</label>
-				  <textarea id="message" class ="message" name ="message" rows="4" placeholder= "How can we help you?"></textarea>
-				  <button type="submit">Submit</button>
-				</form>
-			  </div>
-		</section>
+			
 
 		<script src ="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 		<script type = "module" src = "https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js"></script>
