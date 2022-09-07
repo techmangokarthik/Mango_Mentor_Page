@@ -13,17 +13,17 @@
 	<script type = "module" src="https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js"></script>
 	<script type = "module" src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js"></script>
 	<script type = "module" src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js"></script>
-	<script  type = "module" src = "app.js"></script>
+	<script  type = "module" src = "./contact-form/app.js"></script>
 	<title>Mango Mentors</title>
 	<!--Mental Note: Make sure this is cross browser AND mobile friendly!!-->
-	<!--Additional elements for browsers and robots go here goes here-->
+	
 </head>
 
 <body>
 	<header>
 		<nav>
 			<div class = "logo" alt = "logo">
-			 <a href = "#https://mango-mentors-landing-page.web.app"> <h3>Mango Mentors</h3></a>
+			 <a href = "https://mango-mentors-landing-page.web.app"> <h3>Mango Mentors</h3></a>
 			</div>
 			<ul class = "nav-links">
 				<li><a href= "#mentee-content">Mentee Content</a></li>
@@ -52,7 +52,7 @@
 					</div>
 					<div class ="info-section">
 						<button id="apply-button" class ="apply-button">Apply Today!</button>
-						<a href="./documents/Mentorship_Guidelines.pdf" download>
+						<a href = "./documents/Mango_Mentor_Presentation_Deck.pdf" download>
 						<button id = "apply-more-info" class ="apply-more-info">More Info</button>
 						</a>
 					</div>
@@ -64,7 +64,7 @@
 			</section>
 
 			<div class ="bg-modal">
-				<form class = "contact-form modal-content">
+				<form action="https://formsubmit.co/alfonso@techmango.net" method= "POST" class = "contact-form modal-content">
 				  <div class = "close">X</div>
 				  <h3>Contact Us</h3>
 				  <input type="hidden" name="subject" value="New email!">
@@ -91,7 +91,6 @@
 						<input type="text" class ="app_name" name="app_name" placeholder = "Write your name here">
 						<label>Email</label>
 						<input type="email" class ="app_email" name="app_email" placeholder= Email address">
-						<input type="hidden" name="next" value="https://argunawan.github.io/Mango_Mentor_Page/pages/thankyou.html">
 						<label>Phone</label>
 						<input type="text"class ="app_phone" name="app_phone" placeholder =" Phone number">
 						<label>Message</label>
@@ -332,7 +331,7 @@
 						</p>
 				</div>
 				<div class ="cta">
-					<button class ="apply-select">Register today!</button>
+					<button id ="apply-button" class ="apply-button">Register today!</button>
 				</div>
 			</div>
 		</section>

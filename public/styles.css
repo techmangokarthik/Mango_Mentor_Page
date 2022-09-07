@@ -243,7 +243,7 @@ body {
 	.intro-text p {
 		font-size: 18px;
 	}
-	.cta {
+	.info-section {
 		padding: 10px 0px 0px 0px;
 	}
 
@@ -312,7 +312,7 @@ blockquote{
   margin-right: auto;
   position: center;
   padding: 25px;
-  background: lightblue;
+  background: white;
   border: 1px solid #1E6BF1;
   color: #1E6BF1;
   box-sizing: border-box;
@@ -713,6 +713,7 @@ blockquote{
   justify-content: center;
   align-items: center;
   display: none;
+  
 }
 
 .apply-modal-content{

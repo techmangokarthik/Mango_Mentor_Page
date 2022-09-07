@@ -23,13 +23,14 @@ const applicationInfo = firebase.database().ref('application-info');
 document.querySelector(".contact-form").addEventListener("submit",submitForm);
 document.querySelector(".application-form").addEventListener("apply-submit",submitAppForm);
 
-// let name = document.querySelector(".name").value;
-// let email = document.querySelector(".email").value;
-// let phone = document.querySelector(".phone").value;
-// let message = document.querySelector(".message").value;
+
 
 function submitForm(e){
     e.preventDefault();
+
+    const information = arrayofInformation.map((obj) => {
+      return Object.assign ({}, obj)
+    });
     
     //Get form values here
     const name = document.querySelector(".name").value;
