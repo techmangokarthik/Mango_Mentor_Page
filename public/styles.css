@@ -201,6 +201,12 @@ body {
   padding: 50px 0px 0px 0px
 }
 
+.info-section a{
+  color: white;
+  text-decoration: none;
+
+}
+
 .apply-more-info{
   background: orange;
   border-radius: 25px;
@@ -772,7 +778,7 @@ blockquote{
   font-family: "Montserrat", sans-serif;
 }
   .apply-button:hover {
-  background-color: white;
+  
   color: blue;
   border: 2px solid blue;
  }
