@@ -515,7 +515,9 @@ blockquote{
   display: flex;
   background: none;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .contact-form h3 { 
@@ -579,15 +581,26 @@ blockquote{
   border-bottom: 3px solid lightblue;
 }
 
-@media all and (min-width: 1000px) {
+@media all and (max-width: 1000px) {
   .contact-form {
     width: 40%;
   }
+  .close{
+    position: absolute;
+    top: 0;
+    padding-right: 600px;
+  }
 }
 
-@media all and (min-width: 1080px) {
+@media all and (max-width: 1080px) {
   .contact-form{
     width: 30%;
+  }
+  .close{
+    position: absolute;
+    top: 0;
+    padding-right: 600px;
+
   }
 }
 
@@ -620,6 +633,7 @@ blockquote{
   font-family: inherit;
   font-size: 30px;
   cursor: pointer;
+
 }
 
 .contact-button{
@@ -692,15 +706,27 @@ blockquote{
   border-bottom: 3px solid lightblue;
 }
 
-@media all and (min-width: 1000px) {
+@media all and (max-width: 1000px) {
   .application-form{
     width: 40%;
   }
+  .close{
+    position: absolute;
+    top: 0;
+    padding-right: 80%;
+
+  }
 }
 
-@media all and (min-width: 1080px) {
+@media all and (max-width: 1080px) {
   .application-form{
     width: 30%;
+  }
+  .close{
+    position: absolute;
+    top: 0;
+    padding-right: 50%;
+
   }
 }
 

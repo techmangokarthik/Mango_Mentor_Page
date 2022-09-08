@@ -64,7 +64,7 @@
 			</section>
 
 			<div class ="bg-modal">
-				<form action="https://formsubmit.co/alfonso@techmango.net" method= "POST" class = "contact-form modal-content">
+				<form class = "contact-form modal-content">
 				  <div class = "close">X</div>
 				  <h3>Contact Us</h3>
 				  <input type="hidden" name="subject" value="New email!">
@@ -327,19 +327,32 @@
 				<div class = "intro-text">
 					<h1>Interested in joining?</h1>
 						<p> 
-							Register and start today!
+							Contact us now for an inquries for questions!
 						</p>
 				</div>
-				<div class ="cta">
-					<button id ="apply-button" class ="apply-button">Register today!</button>
+				<div class = "container">
+					<form class = "contact-form">
+						<input type="hidden" name="subject" value="New email!">
+						<label>Name</label>
+						<input type="text" class ="name" name="name" placeholder = "Write your name here">
+						<label>Email</label>
+						<input type="email" class ="email" name="email" placeholder= Email address">
+						<input type="hidden" name="next" value="https://argunawan.github.io/Mango_Mentor_Page/pages/thankyou.html">
+						<label>Phone</label>
+						<input type="text"class ="phone" name="phone" placeholder =" Phone number">
+						<label>Message</label>
+						<textarea id="message" class ="message" name ="message" rows="4" placeholder = "How can we help you?"></textarea>
+						<button class = "submit" type= "submit">Submit</button>
+					  </form>
 				</div>
+				
 			</div>
 		</section>
 			
 
 		<script src ="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 		<script type = "module" src = "https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js"></script>
-		<script src ="contact-form/app.js"></script>
+		<script src =" contact-form/app.js"></script>
 	
 		<section class = "footer">
 			<div class = "socials">
