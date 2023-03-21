@@ -1,95 +1,202 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-	<link rel ="shortcut icon" type="image/png" href=" /images/favicon.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<script type = "module" src="https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js"></script>
-	<script type = "module" src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js"></script>
-	<script type = "module" src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js"></script>
-	<script  type = "module" src = "./contact-form/app.js"></script>
-	<title>Mango Mentors</title>
-	<!--Mental Note: Make sure this is cross browser AND mobile friendly!!-->
-	
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible"
+			  content="IE-edge">
+		<meta name="viewport"
+			  content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="styles.css">
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+		<link rel="shortcut icon"
+			  type="image/png"
+			  href=" /images/favicon.png">
+		<link rel="stylesheet"
+			  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			  integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			  crossorigin="anonymous"
+			  referrerpolicy="no-referrer" />
+		<script type="module"
+				src="https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js"></script>
+		<script type="module"
+				src="https://www.gstatic.com/firebasejs/9.9.3/firebase-firestore.js"></script>
+		<script type="module"
+				src="https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js"></script>
+		<script type="module"
+				src="./contact-form/app.js"></script>
+		<title>Mango Mentors</title>
+		<!--Mental Note: Make sure this is cross browser AND mobile friendly!!-->
 
-<body>
-	<header>
-		<nav>
-			<div class = "logo" alt = "logo">
-			 <a href = "https://mango-mentors-landing-page.web.app"> <h3>Mango Mentors</h3></a>
-			</div>
-			<ul class = "nav-links">
-				<li><a href= "./index.html#mentee-content">Mentee Content</a></li>
-				<li><a href="./index.html#mentor-content">Mentor Content</a></li>
-				<li><a href="./index.html" class = "contact-button" id = "contact-button">Contact Us</a></li>
-			</ul>
-			<div class =" burger">
-			  <div class ="line1"></div>
-			  <div class ="line2"></div>
-			  <div class ="line3"></div>
-			</div> 
-		  </nav>
-		  <script src="script.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<div class="logo"
+					 alt="logo">
+					<a href="https://mango-mentors-landing-page.web.app">
+						<h3>Mango Mentors</h3>
+					</a>
+				</div>
+				<ul class="nav-links">
+					<li><a href="./index.html#mentee-content">Mentee Content</a></li>
+					<li><a href="./index.html#mentor-content">Mentor Content</a></li>
+					<li><a href="./index.html"
+						   class="contact-button"
+						   id="contact-button">Contact Us</a></li>
+				</ul>
+				<div class=" burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+			<script src="script.js"></script>
 		</header>
 
 		<main>
 
-		<section class ="presentation">
-			<div class = "mentee-content-img">
-				<div class = "introduction">
-					<div id = "privacy-policy-content" class ="intro-text">
-						<h1>Privacy Policy</h1>
-						<p> 
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-						</p>
-						<p>
-							It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-						</p>
+			<section class="presentation">
+				<div class="mentee-content-img">
+					<div class="introduction">
+						<div id="privacy-policy-content"
+							 class="intro-text">
+							<h1>Privacy Policy</h1>
+							<p class="terms-title">Last updated: Mar 20, 2023</p>
+							<p class="terms-content">This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+							<p class="terms-content">We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
+							<p class="terms-title">Interpretation</p>
+							<p class="terms-content">The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+							<p class="terms-title">Definitions</p>
+							<p class="terms-content">For the purposes of this Privacy Policy:</p>
+							<p class="terms-content">Account means a unique account created for You to access our Service or parts of our Service.</p>
+							<p class="terms-content">Affiliate means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
+							<p class="terms-content">Application means the software program provided by the Company downloaded by You on any electronic device, named Mango Mentors</p>
+							<p class="terms-content">Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Mango Mentors.</p>
+							<p class="terms-content">Country refers to: Georgia, United States</p>
+							<p class="terms-content">Device means any device that can access the Service such as a computer, a cell phone or a digital tablet.</p>
+							<p class="terms-content">Personal Data is any information that relates to an identified or identifiable individual.</p>
+							<p class="terms-content">Service refers to the Application.</p>
+							<p class="terms-content">Service Provider means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</p>
+							<p class="terms-content">Usage Data refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</p>
+							<p class="terms-content">You means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable</p>
+							<p class="terms-content">Collecting and Using Your Personal Data</p>
+							<p class="terms-title">Types of Data Collected</p>
+							<p class="terms-title">Personal Data</p>
+							<p class="terms-content">While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
+							<ul>
+								<li>Email address</li>
+								<li>First name and Last Name</li>
+								<li>Mobile Number</li>
+							</ul>
+							<p class="terms-title">Usage Data</p>
+							<p class="terms-content">Usage Data is collected automatically when using the Service.</p>
+							<p class="terms-content">Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+							<p class="terms-content">When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
+							<p class="terms-content">We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.</p>
+							<p class="terms-title">Use of Your Personal Data</p>
+							<p class="terms-content">The Company may use Personal Data for the following purposes:</p>
+							<p class="terms-content">To provide and maintain our Service, including to monitor the usage of our Service.</p>
+							<p class="terms-content">To manage Your Account: to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functions of the Service that are available to You as a registered user.</p>
+							<p class="terms-content">For the performance of a contract: the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.</p>
+							<p class="terms-content">To contact You: To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</p>
+							<p class="terms-content">To provide You with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.</p>
+							<p class="terms-content">To manage Your requests: To attend and manage Your requests to Us.</p>
+							<p class="terms-content">For business transfers: We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</p>
+							<p class="terms-content">For other purposes: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.</p>
+							<p class="terms-content">We may share Your personal information in the following situations:</p>
+							<p class="terms-content">&#x2022 With Service Providers: We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.</p>
+							<p class="terms-content">&#x2022 For business transfers: We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.</p>
+							<p class="terms-content">&#x2022 With Affiliates: We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.</p>
+							<p class="terms-content">&#x2022 With business partners: We may share Your information with Our business partners to offer You certain products, services or promotions.</p>
+							<p class="terms-content">&#x2022 With other users: when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.</p>
+							<p class="terms-content">&#x2022 With Your consent: We may disclose Your personal information for any other purpose with Your consent.</p>
+							<p class="terms-title">Retention of Your Personal Data</p>
+							<p class="terms-content">The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
+							<p class="terms-content">The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.</p>
+							<p class="terms-title">Transfer of Your Personal Data</p>
+							<p class="terms-content">Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.</p>
+							<p class="terms-content">Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</p>
+							<p class="terms-content">The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
+							<p class="terms-title">Disclosure of Your Personal Data</p>
+							<p class="terms-title">Business Transactions</p>
+							<p class="terms-content">If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
+							<p class="terms-title">Law enforcement</p>
+							<p class="terms-content">Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
+							<p class="terms-title">Other legal requirements</p>
+							<p class="terms-content">The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:</p>
+							<ul>
+								<li>Comply with a legal obligation</li>
+								<li>Protect and defend the rights or property of the Company</li>
+								<li>Prevent or investigate possible wrongdoing in connection with the Service</li>
+								<li>Protect the personal safety of Users of the Service or the public</li>
+								<li>Protect against legal liability</li>
+							</ul>
+							<p class="terms-title">Security of Your Personal Data</p>
+							<p class="terms-content">The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
+							<p class="terms-content">Children's Privacy</p>
+							<p class="terms-content">Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.</p>
+							<p class="terms-content">If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
+							<p class="terms-content">Links to Other Websites</p>
+							<p class="terms-content">Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
+							<p class="terms-content">We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
+							<p class="terms-content">Changes to this Privacy Policy</p>
+							<p class="terms-content">We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
+							<p class="terms-content">We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.</p>
+							<p class="terms-content">You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+							<p class="terms-title">Contact Us</p>
+							<p class="terms-content">If you have any questions about this Privacy Policy, You can contact us:</p>
+							<ul>
+								<li>By email: Support@Mangomentors.net</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-			
+			</section>
 
-		<script src ="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-		<script type = "module" src = "https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js"></script>
-		<script src =" contact-form/app.js"></script>
-	
-		<section class = "footer">
-			<div class = "socials">
-				<a href ="https://www.instagram.com/techmango_us/"><i class = "fab fa-instagram"></i></a>
-				<a href =""><i class = "fab fa-youtube"></i></a>
-				<a href =""><i class = "fab fa-twitter"></i></a>
-				<a href ="https://www.linkedin.com/company/techmango-usa/"><i class = "fab fa-linkedin"></i></a>
-			</div>
-			<ul class = "list">
-				<li>
-					<a href="./index.html">Home</a>
-				</li>
-				<li>
-					<a href="./index.html">Services</a>
-				</li>
-				<li>
-					<a href="./index.html">About</a>
-				</li>
-				<li>
-					<a href="./terms.html">Terms</a>
-				</li>
-				<li>
-					<a href="./policy.html">Privacy Policy</a>
-				</li>
-				<p class="copyright">
-					Mango Mentors @ 2022
-				</p>
-			</ul>
-		</section>
+
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+			<script type="module"
+					src="https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js"></script>
+			<script src=" contact-form/app.js"></script>
+
+			<section class="footer">
+				<div class="socials">
+					<a href="https://www.instagram.com/techmango_us/"><i class="fab fa-instagram"></i></a>
+					<a href=""><i class="fab fa-youtube"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/company/techmango-usa/"><i class="fab fa-linkedin"></i></a>
+				</div>
+				<ul class="list">
+					<li>
+						<a href="./index.html">Home</a>
+					</li>
+					<li>
+						<a href="./index.html">Services</a>
+					</li>
+					<li>
+						<a href="./index.html">About</a>
+					</li>
+					<li>
+						<a href="./terms.html">Terms</a>
+					</li>
+					<li>
+						<a href="./policy.html">Privacy Policy</a>
+					</li>
+					<p class="copyright">
+						Mango Mentors @ 2022
+					</p>
+				</ul>
+			</section>
 		</main>
-	  </body>
+	</body>
+
 </html>
