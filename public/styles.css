@@ -51,6 +51,16 @@ nav{
   cursor: pointer;
 }
 
+.terms-title{
+  font-size: 15.5px;
+  font-weight: 600;
+}
+
+.terms-content{
+  font-size: 13.5px;
+  font-weight: normal;
+}
+
 .burger div{
   width: 25px;
   height: 2px;
