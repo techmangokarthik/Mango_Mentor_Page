@@ -5,7 +5,7 @@ const navSlide = () => {
     
     burger.addEventListener('click',() => {
         //nav list toggling
-        alert('working');
+        // alert('working');
         nav.classList.toggle('nav-active');
   
   
