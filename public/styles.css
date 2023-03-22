@@ -793,3 +793,28 @@ blockquote{
   border: 2px solid blue;
  }
 /*Form*/
+
+
+/* Contact us form responsive fixes */
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+  .contact-form {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 915px) {
+  .footer {
+    margin-top: 10px;
+  }
+
+  .contact-form{
+    width: 100%;
+  }
+
+  .contact-us-section {
+    position: relative;
+    display: inline;
+    margin-bottom: 10px;
+  }
+}
