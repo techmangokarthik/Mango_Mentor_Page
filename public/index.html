@@ -49,8 +49,7 @@
 				<ul class="nav-links">
 					<li><a href="#mentee-content">Mentee Content</a></li>
 					<li><a href="#mentor-content">Mentor Content</a></li>
-					<li><a class="contact-button"
-						   id="contact-button">Contact Us</a></li>
+					<li><a href="#contact-us">Contact Us</a></li>
 				</ul>
 				<div class=" burger">
 					<div class="line1"></div>
@@ -122,7 +121,7 @@
 							  name="message"
 							  rows="4"
 							  placeholder="How can we help you?"></textarea>
-					<button class="submit"
+					<button class="submit" onclick="submitContactUsForm()"
 							type="submit">Submit</button>
 				</form>
 			</div>
@@ -387,7 +386,7 @@
 				</script>
 			</section>
 
-			<section class="presentation">
+			<section id="contact-us" class="presentation">
 				<div class="introduction">
 					<div class="intro-text">
 						<h1>Interested in joining?</h1>
@@ -448,7 +447,7 @@
 									message: message
 								}
 								console.log(params);
-								fetch("http://3.80.99.160:3000/api/v1/contact/create", {
+								fetch("http://api.mangomentors.net:3000/api/v1/contact/create", {
 									method: "POST",
 									headers: { 'Content-Type': 'application/json' },
 									body: JSON.stringify(params)
